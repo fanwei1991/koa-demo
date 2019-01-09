@@ -1,7 +1,8 @@
 const homeService = require('../service/home')
 module.exports = {
   index: async (ctx, next) => {
-    await ctx.render('home/index', {title: 'home标题'})
+//    await ctx.render('home/index', {title: 'home标题'})
+    await ctx.render('index')
   },
   home: async (ctx, next) => {
     console.log(ctx.request.query)
